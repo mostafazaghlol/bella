@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">bella</string>
+    <string name="quoteaboutalsaili">Designed by Alsalil .</string>
+    <string name="MakeAccount">make Account</string>
+    <string name="ownerOf">Owner</string>
+    <string name="userOf">user</string>
+    <string name="login">log in</string>
+</resources>
