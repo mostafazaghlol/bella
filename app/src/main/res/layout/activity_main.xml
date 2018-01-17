@@ -24,24 +24,39 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="30dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
                 android:rotation="45"
-                android:src="@mipmap/checklogin"
-
-                />
-
+                android:src="@drawable/checklogin" />
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginLeft="0dp"
                 android:gravity="center"
+                android:paddingTop="0dp"
+                android:textAppearance="?android:textAppearanceSmall"
                 android:rotation="45"
-                android:text="@string/login"
+                android:paddingRight="20dp"
+                android:text="تسجيل"
                 android:textColor="@android:color/black" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:rotation="45"
+                android:paddingRight="50dp"
+                android:text="دخــــول"
+                android:textColor="@android:color/black" />
+
+
 
 
         </LinearLayout>
@@ -52,12 +67,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="80dp"
-        android:layout_marginRight="80dp"
+        android:layout_marginBottom="75dp"
+        android:layout_marginRight="75dp"
         app:angle="45">
 
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/btn_user"
+            android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/shape">
@@ -66,7 +82,10 @@
                 android:id="@+id/LMakeAccount"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
                 android:rotation="45"
                 android:text="@string/MakeAccount"
                 android:textColor="@android:color/black" />
@@ -74,14 +93,15 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/LMakeAccount"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="30dp"
+                android:textStyle="normal"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:gravity="center"
+                android:paddingRight="20dp"
                 android:rotation="45"
                 android:text="@string/userOf"
-                android:textColor="@color/colorPrimaryDark" />
+                android:textColor="#D324BA"/>
 
-        </RelativeLayout>
+        </LinearLayout>
     </com.github.rongi.rotate_layout.layout.RotateLayout>
 
     <com.github.rongi.rotate_layout.layout.RotateLayout
@@ -89,38 +109,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="80dp"
-        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="75dp"
+        android:layout_marginLeft="75dp"
         app:angle="45">
 
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/btn_Owner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:background="@drawable/shape">
 
             <TextView
-                android:id="@+id/RmakeAccount"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                android:rotation="45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="@string/MakeAccount"
-                android:textColor="@android:color/black" />
-
+                android:layout_gravity="center"
+                android:rotation="45"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/black"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/RmakeAccount"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="5dp"
+                android:textStyle="normal"
+                android:textAppearance="?android:textAppearanceMedium"
                 android:gravity="center"
+                android:paddingRight="10dp"
                 android:rotation="45"
                 android:text="@string/ownerOf"
-                android:textColor="@color/colorPrimaryDark" />
+                android:textColor="#D324BA" />
 
 
-        </RelativeLayout>
+
+        </LinearLayout>
     </com.github.rongi.rotate_layout.layout.RotateLayout>
 
     <TextView
