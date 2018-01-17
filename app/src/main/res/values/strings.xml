@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">bella</string>
-    <string name="quoteaboutalsaili">Designed by Alsalil .</string>
-    <string name="MakeAccount">make Account</string>
-    <string name="ownerOf">Owner</string>
-    <string name="userOf">user</string>
-    <string name="login">log in</string>
+    <string name="quoteaboutalsaili">تصميم وبرمجة السليل ويب</string>
+    <string name="MakeAccount">انشاء حساب</string>
+    <string name="ownerOf">صاحب منشأه</string>
+    <string name="userOf">مستخدم</string>
+    <string name="login">تسجيل دخول</string>
+    <string name="missPassword">نسيت كلمة المرور؟</string>
+    <string name="remember_me">تذكرنى</string>
+    <string name="IhaveNoAccount">ليس لديك حساب؟</string>
 </resources>

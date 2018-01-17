@@ -5,6 +5,8 @@
     <string name="MakeAccount">انشاء حساب</string>
     <string name="ownerOf">صاحب منشأه</string>
     <string name="userOf">مستخدم</string>
-    <string name="login">log in</string>
+    <string name="login">تسجيل دخول</string>
+    <string name="missPassword">نسيت كلمة المرور؟</string>
+    <string name="remember_me">تذكرنى</string>
 
 </resources>
