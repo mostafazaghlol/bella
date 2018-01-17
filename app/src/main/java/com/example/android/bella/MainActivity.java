@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //bt_Login=(LinearLayout) ;
         final Intent IntentLogin=new Intent(this,LoginActivity.class);
-        final Intent IntentOwner=new Intent(this,singupForOwner.class);
+        final Intent IntentOwner=new Intent(this,institutionSignUp.class);
         findViewById(R.id.btn_login).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

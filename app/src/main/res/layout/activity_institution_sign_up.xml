@@ -1,9 +1,308 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/white_background"
+    android:orientation="vertical"
     tools:context="com.example.android.bella.institutionSignUp">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/head"
+        android:gravity="center"
+        android:text="تسجيل صاحب المنشأه"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="استخدمها"
+                android:textColorHint="@android:color/black">
+
+                <EditText
+                    android:id="@+id/edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="25dp"
+                    android:drawableRight="@drawable/home"
+                    android:focusableInTouchMode="true"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layou1t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="اسم صاحب المنشأه"
+                android:textColorHint="@android:color/black">
+
+                <EditText
+                    android:id="@+id/edit_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="25dp"
+                    android:drawableRight="@drawable/user"
+                    android:focusableInTouchMode="true"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="رقم السجل التجارى "
+                android:textColorHint="@android:color/black">
+
+                <EditText
+                    android:id="@+id/edit_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="25dp"
+                    android:drawableRight="@drawable/no"
+                    android:focusableInTouchMode="true"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="صوره من السجل التجارى"
+                android:textColorHint="@android:color/black">
+
+                <EditText
+                    android:id="@+id/edit_text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="25dp"
+                    android:drawableRight="@drawable/photo"
+                    android:focusableInTouchMode="true"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="رقم الغرفه التجاريه"
+                android:textColorHint="@android:color/black">
+
+                <EditText
+                    android:id="@+id/edit_text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="25dp"
+                    android:drawableRight="@drawable/no"
+                    android:focusableInTouchMode="true"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="صوره من شهادة الغرفه التجاريه"
+                android:textColorHint="@android:color/black">
+
+                <EditText
+                    android:id="@+id/edit_text5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="25dp"
+                    android:drawableRight="@drawable/photo"
+                    android:focusableInTouchMode="true"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="الموقع على الخريطه"
+                android:textColorHint="@android:color/black">
+
+                <EditText
+                    android:id="@+id/edit_text6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="25dp"
+                    android:drawableRight="@drawable/site"
+                    android:focusableInTouchMode="true"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="وصف المنشأه"
+                android:textColorHint="@android:color/black">
+
+                <EditText
+                    android:id="@+id/edit_text7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="25dp"
+                    android:drawableRight="@drawable/notepad"
+                    android:focusableInTouchMode="true"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="الخدمات الى تقدمها المنشأه"
+                android:textColorHint="@android:color/black">
+
+                <EditText
+                    android:id="@+id/edit_text8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="25dp"
+                    android:drawableRight="@drawable/notepad"
+                    android:focusableInTouchMode="true"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="البريد الإلكتروني للمنشأه"
+                android:textColorHint="@android:color/black">
+
+                <EditText
+                    android:id="@+id/edit_text9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="25dp"
+                    android:drawableRight="@drawable/mail"
+                    android:focusableInTouchMode="true"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="الموقع الخاص بالمنشأه"
+                android:textColorHint="@android:color/black">
+
+                <EditText
+                    android:id="@+id/edit_text10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="25dp"
+                    android:drawableRight="@drawable/site"
+                    android:focusableInTouchMode="true"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="المدينه"
+                android:textColorHint="@android:color/black">
+
+                <EditText
+                    android:id="@+id/edit_text11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="25dp"
+                    android:drawableRight="@drawable/city"
+                    android:focusableInTouchMode="true"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/calendar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:layout_toLeftOf="@id/image"
+                    android:text="نوعية الحجز"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <RadioButton
+                    android:id="@+id/yes_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ميعاد محدد"
+                    android:paddingLeft="10dp"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/no_radio_button"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="فورى"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </RadioGroup>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/head"
+                android:layout_margin="20dp"
+                android:textColor="@android:color/white"
+                android:text="إنشاء حساب"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="هل لديك حساب ؟ سجل الان"
+                android:gravity="center"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
