@@ -9,7 +9,9 @@ import android.view.View;
 import android.widget.EditText;
 
 public class institutionSignUp extends AppCompatActivity {
-    protected Uri selectedImage;
+    protected Uri selectedImage,selectedImage1,selectedImage2;
+    int i=0;
+    protected static final String LOG_TAG=institutionSignUp.class.getName();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,10 +31,14 @@ public class institutionSignUp extends AppCompatActivity {
     }
 
     public void getImageFromGalary(View view) {
+        i=0;
         Intent pickerPhotoIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        startActivityForResult(pickerPhotoIntent, 1);
+        startActivityForResult(pickerPhotoIntent,1);
     }
-
+    public void getImageFromGalary2(View view) {
+        Intent pickerPhotoIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(pickerPhotoIntent,1);
+    }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent imageReturnedIntent) {
         super.onActivityResult(requestCode, resultCode, imageReturnedIntent);
@@ -46,9 +52,22 @@ public class institutionSignUp extends AppCompatActivity {
                 if(resultCode == RESULT_OK) {
                     selectedImage = imageReturnedIntent.getData();
                     Log.i("MainActivity", "selected Image = "+selectedImage);
+                    if(i==0) {
+                        selectedImage1 = selectedImage;
+                        Log.i(LOG_TAG,"the selected pic for 1 is :"+selectedImage1);
+                        Log.e(LOG_TAG,"i = 0");
+                        i++;
+                        Log.e(LOG_TAG,"i = 1");
+                    }else if(i==1){
+                        selectedImage2 = selectedImage;
+                        Log.i(LOG_TAG,"the selected pic for 2 is :"+selectedImage2);
+                        Log.e(LOG_TAG,"i = 1");
+                    }
                 }
                 break;
         }
     }
-}
+
+
+
 }
