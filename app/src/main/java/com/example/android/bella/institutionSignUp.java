@@ -7,11 +7,18 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
+import com.google.android.gms.common.GooglePlayServicesRepairableException;
+import com.google.android.gms.location.places.Place;
+import com.google.android.gms.location.places.ui.PlacePicker;
 
 public class institutionSignUp extends AppCompatActivity {
     protected Uri selectedImage,selectedImage1,selectedImage2;
     int i=0;
     protected static final String LOG_TAG=institutionSignUp.class.getName();
+    String placeHolder;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,9 +46,23 @@ public class institutionSignUp extends AppCompatActivity {
         Intent pickerPhotoIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(pickerPhotoIntent,1);
     }
+    public void getMyLocation(View view) {
+        PlacePicker.IntentBuilder bulider=new PlacePicker.IntentBuilder();
+        Intent intent;
+        try {
+            intent=bulider.build(getApplicationContext());
+            startActivityForResult(intent,1);
+        } catch (GooglePlayServicesRepairableException e) {
+            e.printStackTrace();
+        } catch (GooglePlayServicesNotAvailableException e) {
+            e.printStackTrace();
+        }finally {
+
+        }
+    }
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent imageReturnedIntent) {
-        super.onActivityResult(requestCode, resultCode, imageReturnedIntent);
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
             case 0:
                 if(requestCode == RESULT_OK) {
@@ -50,7 +71,7 @@ public class institutionSignUp extends AppCompatActivity {
                 break;
             case 1:
                 if(resultCode == RESULT_OK) {
-                    selectedImage = imageReturnedIntent.getData();
+                    selectedImage = data.getData();
                     Log.i("MainActivity", "selected Image = "+selectedImage);
                     if(i==0) {
                         selectedImage1 = selectedImage;
@@ -65,6 +86,13 @@ public class institutionSignUp extends AppCompatActivity {
                     }
                 }
                 break;
+
+            case 2:
+                if(resultCode==RESULT_OK){
+                    Place place= PlacePicker.getPlace(data,this);
+                    placeHolder=place.getAddress().toString();
+            }
+            break;
         }
     }
 
