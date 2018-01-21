@@ -10,9 +10,9 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         try {
-            setContentView(R.layout.activity_login);
+            setContentView(R.layout.activity_login2);
         } catch (Exception e) {
-            Log.e("LoginActivity", "error is " + e.getMessage());
+            Log.e("LoginActivity", "error is " + e.toString());
         }
     }
 }
