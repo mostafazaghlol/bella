@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class Accountdetails extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -41,6 +42,30 @@ public class Accountdetails extends AppCompatActivity
         }
     }
 
+    public void displaySelectedScreen(int id) {
+        android.support.v4.app.Fragment fragment = null;
+
+        switch (id) {
+            case R.id.callus:
+                fragment = new callus();
+                break;
+            case R.id.AboutApp:
+                fragment = new aboutApp();
+                break;
+            case R.id.signout:
+                Toast.makeText(this, "sign out", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        if (fragment != null) {
+            android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.content_main, fragment);
+            ft.commit();
+        }
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+    }
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -69,23 +94,7 @@ public class Accountdetails extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.My_Reservations) {
-            // Handle the camera action
-        } else if (id == R.id.Notifications) {
-
-        } else if (id == R.id.Profile) {
-
-        } else if (id == R.id.Profits) {
-
-        } else if (id == R.id.AboutApp) {
-
-        } else if (id == R.id.callus) {
-
-        } else if (id == R.id.signout) {
-
-        }
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
+        displaySelectedScreen(id);
         return true;
     }
 }
