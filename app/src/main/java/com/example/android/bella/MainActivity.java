@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         //bt_Login=(LinearLayout) ;
         final Intent IntentLogin=new Intent(this,LoginActivity.class);
         final Intent IntentOwner=new Intent(this,institutionSignUp.class);
+        final Intent IntentNavi = new Intent(this, Accountdetails.class);
         findViewById(R.id.btn_login).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(IntentOwner);
+            }
+        });
+        findViewById(R.id.btn_user).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(IntentNavi);
             }
         });
     }

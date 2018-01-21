@@ -28,6 +28,10 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_place_API" />
 
+        <activity
+            android:name=".Accountdetails"
+            android:label="@string/title_activity_accountdetails"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

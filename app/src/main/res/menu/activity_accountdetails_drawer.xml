@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/My_Reservations"
+            android:icon="@drawable/calendar"
+            android:title="حجــوزاتي" />
+        <item
+            android:id="@+id/Notifications"
+            android:icon="@drawable/notification"
+            android:title="الاشعــارات" />
+        <item
+            android:id="@+id/Profile"
+            android:icon="@drawable/user1"
+            android:title="الملف الشخصي" />
+        <item
+            android:id="@+id/Profits"
+            android:icon="@drawable/evaluation"
+            android:title="الأرباح" />
+        <item
+            android:id="@+id/AboutApp"
+            android:icon="@drawable/about"
+            android:title="حـول التطبيق" />
+        <item
+            android:id="@+id/callus"
+            android:icon="@drawable/contact"
+            android:title="اتصل بنـأ" />
+        <item
+            android:id="@+id/signout"
+            android:icon="@drawable/back"
+            android:title="تسجيل الخروج" />
+    </group>
+
+</menu>
