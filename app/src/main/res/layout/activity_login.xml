@@ -10,9 +10,9 @@
         android:id="@+id/EditTextLinearlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
         android:orientation="vertical">
 
         <EditText
@@ -23,17 +23,18 @@
             android:drawableRight="@drawable/user1"
             android:inputType="text"
             android:shadowColor="@android:color/white"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textColorHint="@drawable/white_background" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableRight="@drawable/password"
-            android:hint="HI"
             android:inputType="textPassword"
             android:paddingBottom="20dp"
             android:shadowColor="@android:color/white"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textColorHint="@drawable/white_background" />
     </LinearLayout>
 
     <RelativeLayout
@@ -90,10 +91,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_below="@id/btn_login_with_pass"
-        android:gravity="center"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_below="@id/btn_login_with_pass"
+        android:gravity="center"
         android:orientation="horizontal"
         >
 

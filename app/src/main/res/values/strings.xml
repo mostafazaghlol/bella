@@ -9,4 +9,10 @@
     <string name="missPassword">نسيت كلمة المرور؟</string>
     <string name="remember_me">تذكرنى</string>
     <string name="IhaveNoAccount">ليس لديك حساب؟</string>
+    <string name="title_activity_account_details">Account_details</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>

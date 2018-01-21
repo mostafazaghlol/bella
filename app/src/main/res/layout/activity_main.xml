@@ -25,11 +25,11 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:scaleType="fitCenter"
                 android:layout_marginTop="20dp"
                 android:paddingBottom="10dp"
                 android:paddingLeft="10dp"
                 android:rotation="45"
+                android:scaleType="fitCenter"
                 android:src="@drawable/checklogin" />
             <TextView
                 android:layout_width="match_parent"
@@ -37,11 +37,11 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="0dp"
                 android:gravity="center"
-                android:paddingTop="0dp"
-                android:textAppearance="?android:textAppearanceSmall"
-                android:rotation="45"
                 android:paddingRight="20dp"
+                android:paddingTop="0dp"
+                android:rotation="45"
                 android:text="تسجيل"
+                android:textAppearance="?android:textAppearanceSmall"
                 android:textColor="@android:color/black" />
             <TextView
                 android:layout_width="match_parent"
@@ -49,11 +49,11 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="0dp"
                 android:gravity="center"
-                android:paddingTop="0dp"
-                android:textAppearance="?android:textAppearanceSmall"
-                android:rotation="45"
                 android:paddingRight="50dp"
+                android:paddingTop="0dp"
+                android:rotation="45"
                 android:text="دخــــول"
+                android:textAppearance="?android:textAppearanceSmall"
                 android:textColor="@android:color/black" />
 
 
@@ -73,18 +73,19 @@
 
         <LinearLayout
             android:id="@+id/btn_user"
-            android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/shape">
+            android:background="@drawable/shape"
+            android:onClick="openNaviagation"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/LMakeAccount"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="5dp"
                 android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:rotation="45"
                 android:text="@string/MakeAccount"
@@ -93,13 +94,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textStyle="normal"
-                android:textAppearance="?android:textAppearanceMedium"
                 android:gravity="center"
                 android:paddingRight="20dp"
                 android:rotation="45"
                 android:text="@string/userOf"
-                android:textColor="#D324BA"/>
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#D324BA"
+                android:textStyle="normal" />
 
         </LinearLayout>
     </com.github.rongi.rotate_layout.layout.RotateLayout>
@@ -117,28 +118,28 @@
             android:id="@+id/btn_Owner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@drawable/shape">
+            android:background="@drawable/shape"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/MakeAccount"
                 android:layout_gravity="center"
-                android:rotation="45"
-                android:layout_marginTop="30dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:rotation="45"
+                android:text="@string/MakeAccount"
                 android:textColor="@android:color/black"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textStyle="normal"
-                android:textAppearance="?android:textAppearanceMedium"
                 android:gravity="center"
                 android:paddingRight="10dp"
                 android:rotation="45"
                 android:text="@string/ownerOf"
-                android:textColor="#D324BA" />
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#D324BA"
+                android:textStyle="normal" />
 
 
 
@@ -153,7 +154,7 @@
         android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="@string/quoteaboutalsaili"
-        android:textColor="@color/colorAccent" />
+        android:textColor="@android:color/white" />
 
 
 </FrameLayout>

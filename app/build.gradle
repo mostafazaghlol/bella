@@ -30,4 +30,6 @@ dependencies {
     compile 'rongi.rotate-layout:rotate-layout:3.0.0'
     compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
     compile 'com.google.android.gms:play-services:7.3.0'
+    compile 'com.github.Shashank02051997:FancyToast-Android:0.1.3'
+
 }

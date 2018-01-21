@@ -9,7 +9,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="60dp"
         android:background="@drawable/head"
         android:gravity="center"
         android:text="تسجيل صاحب المنشأه"
@@ -35,7 +35,7 @@
                 android:textColorHint="@android:color/black">
 
                 <EditText
-                    android:id="@+id/edit_text"
+                    android:id="@+id/usage_Edit_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="25dp"
@@ -53,7 +53,7 @@
                 android:textColorHint="@android:color/black">
 
                 <EditText
-                    android:id="@+id/edit_text1"
+                    android:id="@+id/nameOfOwner_Edit_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="25dp"
@@ -71,7 +71,7 @@
                 android:textColorHint="@android:color/black">
 
                 <EditText
-                    android:id="@+id/edit_text2"
+                    android:id="@+id/Commeriacalregistraiton_Edit_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="25dp"
@@ -94,8 +94,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:src="@drawable/photo"
-                    android:layout_marginRight="5dp"/>
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/photo" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -115,7 +115,7 @@
                 android:textColorHint="@android:color/black">
 
                 <EditText
-                    android:id="@+id/edit_text4"
+                    android:id="@+id/NumOfCommeriacalRoom_Edit_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="25dp"
@@ -137,8 +137,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:src="@drawable/photo"
-                    android:layout_marginRight="5dp"/>
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/photo" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -146,31 +146,6 @@
                     android:layout_marginRight="25dp"
                     android:layout_toLeftOf="@id/img2"
                     android:text="صوره من شهادة الغرفه التجاريه"
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:textColor="@android:color/black" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:onClick="getMyLocation">
-
-                <ImageView
-                    android:id="@+id/img3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/site"
-                    android:layout_marginRight="5dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="50dp"
-                    android:layout_toLeftOf="@id/img3"
-                    android:text="الموقع على الخريطه"
                     android:textAppearance="?android:textAppearanceMedium"
                     android:textColor="@android:color/black" />
             </RelativeLayout>
@@ -184,7 +159,7 @@
                 android:textColorHint="@android:color/black">
 
                 <EditText
-                    android:id="@+id/edit_text7"
+                    android:id="@+id/Description_of_origin_Edit_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="25dp"
@@ -194,6 +169,31 @@
 
             </android.support.design.widget.TextInputLayout>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="getMyLocation">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/site" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_toLeftOf="@id/img3"
+                    android:text="الموقع على الخريطه"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/text_input_layout8"
                 android:layout_width="match_parent"
@@ -202,7 +202,7 @@
                 android:textColorHint="@android:color/black">
 
                 <EditText
-                    android:id="@+id/edit_text8"
+                    android:id="@+id/Services_Edit_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="25dp"
@@ -220,29 +220,11 @@
                 android:textColorHint="@android:color/black">
 
                 <EditText
-                    android:id="@+id/edit_text9"
+                    android:id="@+id/Email_Edit_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="25dp"
                     android:drawableRight="@drawable/mail"
-                    android:focusableInTouchMode="true"
-                    android:inputType="text" />
-
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/text_input_layout10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="الموقع الخاص بالمنشأه"
-                android:textColorHint="@android:color/black">
-
-                <EditText
-                    android:id="@+id/edit_text10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawablePadding="25dp"
-                    android:drawableRight="@drawable/site"
                     android:focusableInTouchMode="true"
                     android:inputType="text" />
 
@@ -256,7 +238,7 @@
                 android:textColorHint="@android:color/black">
 
                 <EditText
-                    android:id="@+id/edit_text11"
+                    android:id="@+id/city_Edit_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="25dp"
@@ -289,41 +271,36 @@
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:gravity="center"
+                android:orientation="horizontal"
                 >
                 <RadioButton
                     android:id="@+id/yes_radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ميعاد محدد"
                     android:paddingLeft="10dp"
+                    android:text="ميعاد محدد"
                     android:textAppearance="?android:textAppearanceMedium" />
                 <RadioButton
                     android:id="@+id/no_radio_button"
                     android:layout_width="wrap_content"
-                    android:paddingLeft="10dp"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
                     android:text="فورى"
                     android:textAppearance="?android:textAppearanceMedium" />
             </RadioGroup>
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
                 android:background="@drawable/head"
-                android:layout_margin="20dp"
-                android:textColor="@android:color/white"
+                android:onClick="takeData"
                 android:text="إنشاء حساب"
-                android:textStyle="bold"
-                android:textAppearance="?android:textAppearanceLarge"/>
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="هل لديك حساب ؟ سجل الان"
-                android:gravity="center"
-                android:textColor="@android:color/black"/>
         </LinearLayout>
     </ScrollView>
 
