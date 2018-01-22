@@ -15,39 +15,62 @@
         android:background="@android:color/white"
         android:orientation="vertical">
 
-        <TableLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
 
-            <TableRow
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:background="@color/profitbackground"
+                android:gravity="center"
+                android:text="نسبة اصحاب التطبيق"
+                android:textColor="@color/white" />
 
-                <TextView
-                    android:background="#000000"
-                    android:gravity="center"
-                    android:padding="10dip"
-                    android:text="اه"
-                    android:textColor="#ffffff" />
+            <TextView
+                android:id="@+id/TotalProfit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/profitbackground"
+                android:gravity="center"
+                android:text="اجمالى الارباح"
+                android:textColor="@color/white" />
 
-                <TextView
-                    android:gravity="center"
-                    android:padding="3dip"
-                    android:text="اه" />
+            <TextView
+                android:id="@+id/NumberOfTimes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/profitbackground"
+                android:gravity="center"
+                android:text="مرات الحجز"
+                android:textColor="@color/white" />
 
-                <TextView
-                    android:gravity="center"
-                    android:padding="3dip"
-                    android:text="اه" />
+            <TextView
+                android:id="@+id/FacilityName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/profitbackground"
+                android:gravity="center"
+                android:text="اسم المنشأه"
+                android:textColor="@color/white" />
+        </LinearLayout>
 
-                <TextView
-                    android:gravity="center"
-                    android:padding="3dip"
-                    android:text="اه" />
-            </TableRow>
-
-        </TableLayout>
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/android:list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" />
 
     </LinearLayout>
 

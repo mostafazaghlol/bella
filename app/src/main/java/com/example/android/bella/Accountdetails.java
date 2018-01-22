@@ -55,6 +55,12 @@ public class Accountdetails extends AppCompatActivity
             case R.id.signout:
                 Toast.makeText(this, "sign out", Toast.LENGTH_SHORT).show();
                 break;
+            case R.id.Profits:
+                fragment = new profits();
+                break;
+            case R.id.search:
+                fragment = new search();
+                break;
         }
         if (fragment != null) {
             android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
@@ -79,11 +85,7 @@ public class Accountdetails extends AppCompatActivity
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        displaySelectedScreen(id);
 
         return super.onOptionsItemSelected(item);
     }

@@ -3,5 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#7225A5</color>
     <color name="colorAccent">#7225A5</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="profitbackground">#908399</color>
 
 </resources>
