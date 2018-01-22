@@ -61,6 +61,9 @@ public class Accountdetails extends AppCompatActivity
             case R.id.search:
                 fragment = new search();
                 break;
+            case R.id.Notifications:
+                fragment = new notification();
+                break;
         }
         if (fragment != null) {
             android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
